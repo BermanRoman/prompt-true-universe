@@ -22,9 +22,9 @@ Claude с моделью, у которой окно на 1 млн токено�
 
 * **master-prompt.md** — инструкция проводнику, идёт в инструкции проекта.
 * **enter.md** — вход: знакомство и предисловие.
-* **history.md** — часть 1, хронология событий.
+* **chronology.md** — часть 1, хронология событий.
 * **world.md** — часть 2, как устроен мир.
-* **enemies.md** — часть 3, как устроено управление.
+* **control.md** — часть 3, как устроено управление.
 * **practice.md** — часть 4, практикум из 11 умений.
 * **appendices.md** — мыслеформы, режим дня и приложения.
 * **reference.md** — служебное для проводника: канон, решения автора, глоссарий, справочник событий.
@@ -39,7 +39,7 @@ Claude с моделью, у которой окно на 1 млн токено�
 
 1. Создай новый проект в Claude.
 2. Открой файл **[master-prompt.md](https://github.com/BermanRoman/prompt-true-universe/blob/main/master-prompt.md)**, скопируй его содержимое кнопкой «Copy» и вставь в поле «Инструкции» проекта.
-3. Скачай из этого репозитория **enter.md**, **history.md**, **world.md**, **enemies.md**, **practice.md**, **appendices.md** и **reference.md** и добавь их в проект как документы в пространство файлов.
+3. Скачай из этого репозитория **enter.md**, **chronology.md**, **world.md**, **control.md**, **practice.md**, **appendices.md** и **reference.md** и добавь их в проект как документы в пространство файлов.
 4. Напиши в чате проекта: _«Начнём»_
 
 ## Как узнать про обновления
@@ -55,7 +55,7 @@ Claude с моделью, у которой окно на 1 млн токено�
 ``` bash
 mkdir -p true-universe && cd true-universe
 base=https://raw.githubusercontent.com/BermanRoman/prompt-true-universe/main
-for f in master-prompt.md enter.md history.md world.md enemies.md practice.md appendices.md reference.md
+for f in master-prompt.md enter.md chronology.md world.md control.md practice.md appendices.md reference.md
 do curl -fsSL -O "$base/$f"; done
 ls
 ```
